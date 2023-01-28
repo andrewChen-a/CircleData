@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 圆形进度条 -->
+    <declare-styleable name="MyCircleProgressView">
+        <attr name="mCirWidth" format="dimension" />
+        <attr name="mCirColor" format="color" />
+        <attr name="mBgCirWidth" format="dimension" />
+        <attr name="mBgCirColor" format="color" />
+        <attr name="animTime" format="integer" />
+        <attr name="value" format="integer" />
+        <attr name="maxvalue" format="integer" />
+        <attr name="startAngle" format="float" />
+        <attr name="sweepAngle" format="float" />
+        <attr name="valueSize" format="dimension" />
+        <attr name="valueColor" format="color" />
+        <attr name="unit" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="hintSize" format="dimension" />
+        <attr name="hintColor" format="color" />
+        <attr name="gradient" format="dimension" />
+        <attr name="isGradient" format="boolean" />
+        <attr name="shadowSize" format="float" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowShow" format="boolean" />
+        <attr name="digit" format="integer" />
+        <attr name="isanim" format="boolean" />
+    </declare-styleable>
+</resources>

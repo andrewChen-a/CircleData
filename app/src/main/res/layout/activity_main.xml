@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/set_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置圆环进度" />
+
+
+    <com.littlesong.circledata.CircleProcessView
+        app:layout_constraintTop_toBottomOf="@+id/set_progress"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progress_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        app:isanim="true"
+        app:animTime="1000"
+
+        app:digit="0"
+
+        app:hint="出勤率"
+        app:hintColor="#8098B2"
+        app:hintSize="13sp"
+
+        app:mBgCirColor="#DDE3F6"
+        app:mBgCirWidth="5sp"
+
+        app:mCirColor="#3277f9"
+        app:mCirWidth="15sp"
+
+        app:shadowColor="#734947B2"
+        app:shadowShow="true"
+        app:shadowSize="9"
+
+        app:startAngle="270"
+        app:sweepAngle="360"
+        app:unit="%"
+
+        app:value="0"
+        app:valueColor="#5456A4"
+        app:valueSize="25dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
