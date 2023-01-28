@@ -13,7 +13,6 @@ import java.text.DecimalFormat
 
 /**
  * @Author      : 陈松
- * @Email       : song.chen-a1872@aqara.com
  * @Date        : 2023-01-12 21:39.
  * @Description :
  */
@@ -29,7 +28,7 @@ class CircleProcessView(context: Context?, attributeSet: AttributeSet?) :
     private var antiAlias: Boolean = true
 
     //圆心位置
-    private lateinit var centerPosition: Point
+    private var centerPosition: Point
 
     //半径
     private var raduis: Float? = null
@@ -254,7 +253,7 @@ class CircleProcessView(context: Context?, attributeSet: AttributeSet?) :
             canvas?.drawText(
                 mHint.toString(),
                 centerPosition.x.toFloat(),
-                centerPosition.y.toFloat() - mHintPaint.ascent() + 15,// todo
+                centerPosition.y.toFloat() - mHintPaint.ascent() + 15, // 让文本显示位置下移，让出百分比位置
                 mHintPaint
             )
         }
@@ -285,7 +284,7 @@ class CircleProcessView(context: Context?, attributeSet: AttributeSet?) :
     //判断当前的值是否是数字类型
     private fun isNum(str: String): Boolean {
         try {
-            val toDouble = str.toDouble()
+           str.toDouble()
         } catch (e: Exception) {
             return false
         }
